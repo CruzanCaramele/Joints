@@ -1,0 +1,1 @@
+web: gunicorn jointsapp.wsgi --log-file -
