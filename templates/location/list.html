@@ -13,6 +13,10 @@
 				{% if location.hours %}
 					<p><b>Open: </b>{{ location.hours }}</p>
 				{% endif %}
+
+				{% if location.image_file %}
+					<img src="{{location.image_file.url}}">
+				{% endif %}
 				<p>{{ location.description }}</p>
 			</div>
 		{% endfor %}
