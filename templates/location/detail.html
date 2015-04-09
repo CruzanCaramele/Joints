@@ -48,7 +48,7 @@
                 <p class="">{{ location.description}}</p>
                         <div class="">
                             {% if user.is_authenticated %}
-                            <a type="button" href="{% url 'location_update' pk=location.id %}" class="btn btn-default">Edit</a>
+                            <a type="button" href="{% url 'location_update' pk=location.id %}" class="btn btn-primary">Edit</a>
                             {% endif %}
 
                         </div>
@@ -77,9 +77,9 @@
     <hr>
                 {% if user.is_authenticated %}
                         {% if user_review %}
-                        <a type="button" href="{% url 'review_update' pk=location.id %}" class="btn btn-default pull-right">Update Review</a>
+                        <a type="button" href="{% url 'review_update' pk=location.id %}" class="btn btn-primary pull-right">Update Review</a>
                         {% else %}
-                        <a type="button" href="{% url 'review_create' pk=location.id %}" class="btn btn-default pull-right">Add Your Review</a>
+                        <a type="button" href="{% url 'review_create' pk=location.id %}" class="btn btn-primary pull-right">Add Your Review</a>
                         {% endif %}
                 {% endif %}
     </div>
