@@ -63,7 +63,7 @@ class Location(models.Model):
 	wifi = models.IntegerField(choices=WIFI_CHOICES, null=True, blank=True)
 	seating = models.IntegerField(choices=PLURAL_CHOICES, null=True, blank=True)
     	outlets = models.IntegerField(choices=PLURAL_CHOICES, null=True, blank=True)
-    	bathrooms = models.IntegerField(choices=YESNO_CHOICES, null=True, blank=True)
+    	bathroom = models.IntegerField(choices=YESNO_CHOICES, null=True, blank=True)
     	coffee = models.IntegerField(choices=COFFEE_CHOICES, null=True, blank=True)
     	alcohol = models.IntegerField(choices=YESNO_CHOICES, null=True, blank=True)
     	outdoor = models.IntegerField(choices=YESNO_CHOICES, null=True, blank=True)
